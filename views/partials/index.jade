@@ -1,0 +1,28 @@
+p {{itens.length}} itens
+
+div(class="row")
+
+	div(class="col-md-3")
+		h4 POST
+		input(ng-model="form.title", name="title{{$index}}", class="form-control")
+		button(ng-click="postItem()" class="btn btn-default") POST
+
+	div(class="col-md-3")
+		h4 GET
+		div(ng-repeat="item in itens")
+			span(class="form-control get") {{item.title}}
+
+	div(class="col-md-3")
+		h4 PUT
+		div(ng-repeat="item in itens")
+			input(name="title{{$index}}", value="{{item.title}}", class="form-control")
+			button(ng-click="updateItem()" class="btn btn-default") UPDATE 
+
+	div(class="col-md-3")
+		h4 DELETE
+		div(ng-repeat="item in itens")
+			span(class="form-control") {{item.title}}
+			button(ng-click="deleteItem(item.id)" class="btn btn-default") DELETE
+
+
+

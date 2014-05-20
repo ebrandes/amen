@@ -1,0 +1,17 @@
+/* app css stylesheet */
+
+.btn {
+  float: left;
+  width: 30%;
+  margin: 5px;
+}
+
+.form-control{
+  float: left;
+  width: 60%;
+  margin: 5px;
+}
+
+.get {
+  width: 100%;
+}

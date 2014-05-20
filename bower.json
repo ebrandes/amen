@@ -1,0 +1,14 @@
+{
+  "name"            : "amen",
+  "version"         : "0.0.1",
+  "main"            : "app.js",
+  "authors": [
+    "@maiconrcf"
+  ],
+  "license"         : "MIT",
+  "dependencies"    : {
+    "bootstrap"     : "~3.1.1",
+    "angular"       : "~1.2.16",
+    "angular-route" : "~1.2.16"
+  }
+}
